@@ -1,0 +1,152 @@
+/* pages/home/home.wxss */
+/* page{
+    background-color: blueviolet;
+}
+.container{
+    background-color: brown;
+} */
+.container .header-warpper{
+    background-color: #42BD55;
+    height: 100rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.scrollview{
+    background-color: aqua;
+    width: 100%;
+    height: 500rpx;
+}
+
+.main{
+    overflow: scroll;
+    width: 100%;
+}
+
+.header-warpper .search-warpper{
+    background-color: #ffffff;
+    width: 100%;
+    height: 60%;
+    margin: 0 30rpx;
+    border-radius: 10rpx;
+    display: flex;
+    align-items: center;  
+    justify-content: center; 
+    color: rgb(0, 0, 0, 0.2);
+
+}
+
+.header-warpper .search{
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 10rpx;
+}
+
+.title-warpper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30rpx;
+    margin-top: 30rpx;
+}
+
+
+.title-warpper .title{
+    color: #494949;
+    font-weight: bold;
+    font-size: 32rpx;
+}
+
+.title-warpper .more{
+    color: #0DB019;
+    display: flex;
+    align-items: center;
+    
+}
+
+.title-warpper .arrow{
+    width: 14rpx;
+    height: 14rpx;
+    border-right: 4rpx solid  #0DB019;
+    border-bottom: 4rpx solid #0DB019;
+    transform: rotate(-45deg);
+}
+
+
+
+.items{
+    /* display: flex; */
+    /* margin-top: 10rpx;
+    overflow-x: auto; */
+    white-space: nowrap;
+    margin-top: 18rpx;
+    /* padding: 0 30rpx; */
+    /* padding-left: 30rpx; */
+}
+
+.items .item{
+    /* margin: 0 15rpx; */
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 30rpx;
+    width: 210rpx;
+}
+
+.row .item .photo{
+    width: 100%;
+    height: 331rpx;
+    margin-bottom: 15rpx;
+    border-radius: 10rpx;
+    border: 4rpx solid #F2F2F2;
+ }
+
+.items .item:last-of-type{
+    margin-right: 30rpx;
+}
+
+.item .title{
+    font-weight: bold;
+    font-size: 32rpx;
+    margin-bottom: 4rpx;
+     /* 超出宽度内容直接隐藏 */
+    overflow: hidden;
+    /* 尾部超出的内容显示省略号 */
+    text-overflow: ellipsis;
+}
+.score{
+    display: flex;
+    /* width: 40rpx; */
+    height: 40rpx;
+    align-items: center;
+    color: #c9c9c9;
+}
+
+.score .stars{
+    display: flex;
+    margin-right: 4rpx;
+}
+
+.stars .star{
+    width: 26rpx;
+    height: 26rpx;
+}
+
+.mu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.mu-item{
+    /* width: 210rpx; */
+    margin: 10rpx;
+}
+
+.mu-item:last-of-type{
+    margin-left: 10rpx;
+}

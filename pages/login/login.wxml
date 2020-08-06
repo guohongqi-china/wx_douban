@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+<nav-bar title="登录"
+         navBarColor="#42BD55"
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='true'
+         home='true'
+></nav-bar>
+<view class="container" style="margin-top:{{ barTop  }}rpx;height:{{ contentHeight }}rpx;">
+    <image class="logo" src="/imgs/ic_launcher.png">
+        
+    </image>
+    <view class="wetchat btn-login" bind:tap="wechatLogin">微信登录</view>
+    <view class="douban btn-login" bind:tap="doubanLogin">已有豆瓣账号</view>
+    <view class="bottomContainer">
+        <view class="loginText">登录表示同意</view>
+        <view class="loginProtocol" bind:tap="openAgreement">豆瓣使用协议/隐私协议</view>
+    </view>
+</view>
+

@@ -1,0 +1,44 @@
+/* components/photo-item/photo-item.wxss */
+
+.container-item{
+    background-color: salmon;
+    width: 210rpx;
+}
+
+.item{
+   /* background-color; */
+   padding: 10rpx;
+}
+
+.item .photo-item{
+   width: 100%;
+   height: 301rpx;
+   border-radius: 10rpx;
+   border: 4rpx solid #F2F2F2;}
+
+.item .item-title{
+    font-weight: bold;
+    font-size: 32rpx;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.score{
+    display: flex;
+    /* width: 40rpx; */
+    height: 40rpx;
+    align-items: center;
+    color: #c9c9c9;
+}
+
+.score .stars{
+    display: flex;
+    margin-right: 4rpx;
+}
+
+.stars .star{
+    width: 26rpx;
+    height: 26rpx;
+}

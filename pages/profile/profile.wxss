@@ -1,0 +1,248 @@
+/* pages/profile/profile.wxss */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100%; */
+    overflow: scroll;
+    /* background-color: coral; */
+}
+.version{
+    /* position: absolute; */
+    /* bottom: 50rpx; */
+    color: #C9C9C9;
+    font-size: 24rpx;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+.version .version-item{
+    align-items: flex-end;
+}
+
+.loginBuffer{
+    width: 100%;
+    background-color: lightcoral;
+    height: 350rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.loginBuffer image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.login-btn{
+    background-color: #ffffff;
+    width: 45%;
+    height: 100rpx;
+    line-height:100rpx;
+    text-align: center;
+    border-radius: 50rpx;
+    font-size: 40rpx;
+    z-index: 2;
+    box-shadow: 2rpx 2rpx 2rpx 0 rgb(0, 0, 0,0.1);
+}
+
+.tab-container {
+    background-color: darkseagreen;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    padding:0 40rpx;
+}
+
+
+.title-content{
+    color:black;
+    background-color: deepskyblue;
+    font-size: 40rpx;
+}
+
+.login-container{
+    color: dimgrey;
+    background-color: firebrick;
+    font-size: 30rpx;
+}
+
+.icon-title {
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+
+}
+
+.buffer {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    background-color: gold;
+}
+
+/* .iii{
+    width: 200rpx;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    background-color: greenyellow;
+} */
+
+.debug {
+    height: 100rpx;
+    display: flex;
+    background-color: hotpink;
+    /* justify-content: space-between; */
+    /* padding-right: 30rpx; */
+    /* margin-left: 30rpx;
+    margin-right: 100rpx; */
+    /* padding: 0 50rpx; */
+    margin: 0 50rpx;
+}
+
+.view1 {
+    background-color: indigo;
+    width: 100rpx;
+}
+.view2 {
+    background-color: khaki;
+    width: 100rpx;
+}
+
+.item-warpper{ 
+    margin-top: 30rpx;
+    width: 100%;
+    /* background-color: royalblue; */
+}
+
+.title-warpper{ 
+    margin-left: 30rpx;
+    margin-right: 40rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+
+.title-warpper .title{
+    font-weight: bold;
+    font-size: 36rpx;
+}
+
+.title-warpper .view{
+    color: #838383;
+    display: flex;
+    align-items: center;
+    font-size: 25rpx;
+}
+
+.item-warpper .arrow{
+    width: 18rpx;
+    height: 18rpx;
+    border-right: 4rpx solid  #7F7F7F;
+    border-bottom: 4rpx solid #7F7F7F;
+    transform: rotate(-45deg);
+    margin-left: 10rpx;
+
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding-left: 20rpx;
+    padding-right: 20rpx;
+    /* background-color: rosybrown; */
+}
+
+/* .item:last-of-type .divider{ */
+    /* visibility: hidden; */
+    /* display: none; */
+/* } */
+
+.item .icon{
+    width: 90rpx;
+    height: 90rpx;
+    margin-right: 20rpx;
+}
+
+.info-warpper{
+    /* width: 100%; */
+    flex-grow: 1;
+    padding-right: 20rpx;
+}
+
+.info-warpper .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rpx;
+}
+
+.info .left .top{ 
+    margin-bottom: 15rpx;
+    font-size: 26rpx;
+}
+
+.info .left .bottom{
+    display: flex;
+    color: #7F7F7F;
+    /* background-color: red; */
+    align-items: flex-end;
+}
+
+.info .count{
+    font-size: 45rpx;
+    margin-right: 10rpx;
+}
+
+.info .bottom .text{
+    font-size: 26rpx;
+    margin-bottom: 10rpx;
+}
+
+.info .right{
+    display: flex;
+    align-items: center;
+    /* background-color: saddlebrown; */
+    flex-grow: 1;
+    justify-content: space-between;
+    padding-left: 100rpx;
+}
+
+.info .right .text{
+    color: #C1C1C1;
+    margin-right: 10rpx;
+    font-size: 25rpx;
+    margin-right: 50rpx;
+}
+
+.info .right .arrow{
+    justify-self: start;
+}
+
+.info .right .right-arrow{
+    display: flex;
+    align-items: center;
+}
+
+.info .right .begin{
+    color: #4A4A4A;
+    background-color: #F5F5F5;
+    border-radius: 10rpx;
+    padding: 8rpx 15rpx;
+    font-size: 25rpx;
+}
+
+.item .divider{
+    background-color:rgb(0, 0, 0,0.1);
+    height: 2rpx;
+    width: 100%;
+    margin-top: 15rpx;
+}
+

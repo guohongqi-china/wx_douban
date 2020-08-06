@@ -1,0 +1,20 @@
+<!--pages/rank/rank.wxml-->
+
+<view class="container">
+<nav-bar title="榜单"
+         navBarColor="#42BD55" 
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='false'
+         home='false'
+></nav-bar>
+    <!-- <view class="flex-test" style="height:{{ 600 }}rpx;padding-top:{{ barTop }}px;"> -->
+        <view class="flex-test" style="height:{{ containerHeight }}rpx;margin-top:{{ barTop }}px;">
+
+    <view class="a">a</view>
+    <view class="b">b</view>
+    <view class="c">c</view>
+    </view>
+</view>

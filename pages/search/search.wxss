@@ -1,0 +1,9 @@
+/* pages/search/search.wxss */
+
+.container{
+    background-color: crimson;
+    padding-top: 10rpx;
+}
+text{
+    background-color: cyan;
+}

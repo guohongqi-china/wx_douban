@@ -1,0 +1,36 @@
+<!--pages/list/list.wxml-->
+
+<nav-bar title="{{ title }}"
+         navBarColor="#42BD55"
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='true'
+         home='false'
+         bind:eventAction="backAction"
+         bindhome='homeAction'
+></nav-bar>
+
+<view class="container" style="height:{{contentHeight}}rpx;margin-top:{{topHead}}rpx;">
+    <movie-item class="item"
+    wx:for="{{ movies }}"
+    wx:key="unique"
+    movie="{{ item }}"
+    > 
+    e333
+    </movie-item>
+    <view class="item hide" wx:if="{{ movies.length % 3 > 0 }}">
+        <image class="photo" src="{{ movie.images.large }}" ></image>
+        <view class="title">{{ movie.title }}</view>
+        <view class="score">
+        </view>
+    </view>
+    <view class="item hide" wx:if="{{ movies.length % 3 == 1 }}">
+        <image class="photo" src="{{ movie.images.large }}" ></image>
+        <view class="title">{{ movie.title }}</view>
+        <view class="score">
+        </view>
+    </view>
+</view>
+

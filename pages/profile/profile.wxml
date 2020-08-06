@@ -1,0 +1,123 @@
+<!--pages/profile/profile.wxml-->
+<!-- <text>pages/profile/profile.wxml</text> -->
+<nav-bar title="书影音档案"
+         navBarColor="#42BD55"
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='false'
+         home='false'
+></nav-bar>
+<view class="container" style="margin-top:{{ barTop  }}rpx;height:{{ contentHeight }}rpx;">
+    <view class="container-tap">
+        <view class="loginBuffer">
+            <image src="/imgs/bg_mine_login.png" model="aspectFill"></image>
+            <view class="login-btn" bind:tap="loginAction"> 登录 </view>
+        </view>
+        <view class="item-warpper">
+            <view class="title-warpper">
+                <view class="title">我的输赢赢</view>
+                <view class="view">
+                    登录查看
+                    <view class="arrow"></view>
+                </view>
+            </view>
+            <view class="items">
+                <view class="item" wx:for="{{ items }}" wx:key="unique">
+                    <image class="icon" src="/imgs/{{item.icon}}" />
+                    <view class="info-warpper">
+                        <view class="info">
+                            <view class="left">
+                                <view class="top">{{item.title}}</view>
+                                <view class="bottom">
+                                    <view class="count">{{item.count}}</view>
+                                    <view class="text">{{item.has}}</view>
+                                </view>
+                            </view>
+                            <view class="right" bind:tap="begin" data-index="{{index}}">
+                                <text class="text">{{item.mark}}</text>
+                                <view class="right-arrow">
+                                    <view class="begin">立即开启</view>
+                                     <view class="arrow"></view>
+                                </view>
+                            </view>
+                        </view>
+                        <view class="divider"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class="version" >
+        版本1.0.39
+    </view>
+    
+</view>
+
+
+   <!-- <view class="items">
+            <view class="item">
+                <image class="icon" src="/imgs/ic_cat_music.png" />
+                <view class="info-warpper">
+                    <view class="info">
+                        <view class="left">
+                            <view class="top">观影分析</view>
+                            <view class="bottom">
+                                <view class="count">0</view>
+                                <view class="text">看过</view>
+                            </view>
+                        </view>
+                        <view class="right">
+                            <text class="text">标记10部影片\n开启观影分析</text>
+                            <view class="begin">立即开启</view>
+                            <view class="arrow"></view>
+                        </view>
+                    </view>
+                    <view class="divider"></view>
+                </view>
+            </view>
+
+            <view class="item">
+                <image class="icon" src="/imgs/ic_cat_movie.png" />
+                <view class="info-warpper">
+                    <view class="info">
+                        <view class="left">
+                            <view class="top">观影分析</view>
+                            <view class="bottom">
+                                <view class="count">0</view>
+                                <view class="text">看过</view>
+                            </view>
+                        </view>
+                        <view class="right">
+                            <text class="text">标记10部影片\n开启观影分析</text>
+                            <view class="begin">立即开启</view>
+                            <view class="arrow"></view>
+                        </view>
+                    </view>
+                    <view class="divider"></view>
+                </view>
+            </view>
+            
+            <view class="item">
+                <image class="icon" src="/imgs/ic_cat_book.png" />
+                <view class="info-warpper">
+                    <view class="info">
+                        <view class="left">
+                            <view class="top">观影分析</view>
+                            <view class="bottom">
+                                <view class="count">0</view>
+                                <view class="text">看过</view>
+                            </view>
+                        </view>
+                        <view class="right">
+                            <text class="text">标记10部影片\n开启观影分析</text>
+                            <view class="begin">立即开启</view>
+                            <view class="arrow"></view>
+                        </view>
+                    </view>
+                    <view class="divider"></view>
+                </view>
+            </view>        
+          </view> -->

@@ -1,0 +1,90 @@
+<!-- pages/home/home.wxml -->
+<nav-bar title="首页"
+         navBarColor="#42BD55"
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='false'
+         home='false'
+         bind:eventAction="backAction"
+></nav-bar>
+<view class="container" style="padding-top:{{ barTop }}rpx;">
+  <view class="header-warpper" style="top:{{ barTop }}rpx;">
+    <view class="search-warpper" bind:tap="searchAction">
+      <image class="search" src="/imgs/ic_search.png"></image>
+      <text>搜索</text>
+    </view>
+  </view>
+  <!-- <scroll-view class="scrollview" scroll-y="{{true}}"> -->
+    <view class="main" style="height:{{ contentHeight }}rpx;margin-top:{{ 100}}rpx;">
+    <view class="row" wx:for="{{ allMovies }}" wx:key="unique">
+      <view class="title-warpper">
+        <view class="title">{{item.title}}</view>
+        <view class="more" bind:tap="viewMore" data-index="{{index}}">
+          查看更多
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <scroll-view class="items" scroll-x="true">
+        <movie-item class="item" wx:for="{{item.movies}}" wx:key="unique" movie="{{item}}" bind:tap="movieTap" bind:myevent="event"></movie-item>
+      </scroll-view>
+    </view>
+  </view>
+  <!-- </scroll-view> -->
+</view>
+
+  <!-- <view class="main">
+    <view class="row" wx:for="{{ allMovies }}" wx:key="unique">
+      <view class="title-warpper">
+        <view class="title">{{item.title}}</view>
+        <view class="more" bind:tap="viewMore" data-index="{{index}}">
+          查看更多
+          <view class="arrow"></view>
+        </view>
+      </view>
+      <scroll-view class="items" scroll-x="true">
+        <movie-item class="item" wx:for="{{item.movies}}" wx:key="unique" movie="{{item}}" bind:tap="movieTap" bind:myevent="event"></movie-item>
+      </scroll-view>
+    </view>
+  </view> -->
+
+<!-- <view class="row">
+          <view class="title-warpper">
+            <view class="title">影院热映</view>
+            <view class="more">查看更多 <view class="arrow"></view></view>
+          </view>
+          <scroll-view class="items" scroll-x="true">
+            <view class="item" wx:for="{{ movies }}" wx:for-item="movie" wx:for-index="index" wx:key="unique">
+              <image class="photo" src="{{ movie.images.large }}" ></image>
+              <view class="title">{{ movie.title }}</view>
+              <view class="score">
+                <view class="stars">
+                  <image wx:for="{{ movie.stars.on }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_on.png"></image>
+                  <image wx:for="{{ movie.stars.half }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_half.png"></image>
+                  <image wx:for="{{ movie.stars.off }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_off.png"></image>
+                </view>
+                {{ movie.rating.average }}
+              </view>
+            </view>
+          </scroll-view>
+            <view class="title-warpper">
+            <view class="title">豆瓣热门</view>
+            <view class="more">查看更多 <view class="arrow"></view></view>
+          </view>
+          <scroll-view class="items" scroll-x="true">
+            <view class="item" wx:for="{{moviewTop}}" wx:for-item="movie" wx:for-index="index" wx:key="unique">
+              <image class="photo" src="{{ movie.images.large }}" ></image>
+              <view class="title">{{ movie.title }}</view>
+              <view class="score">
+                <view class="stars">
+            
+                  <image wx:for="{{ movie.stars.on }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_on.png"></image>
+                  <image wx:for="{{ movie.stars.half }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_half.png"></image>
+                  <image wx:for="{{ movie.stars.off }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_off.png"></image>
+                </view>
+                {{ movie.rating.average }}
+              </view>
+            </view>
+          </scroll-view>
+        </view> -->

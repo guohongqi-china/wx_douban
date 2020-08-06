@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "photo-item": "/components/photo-item/photo-item",
+    "demo-item": "/components/demo/demo",
+    "movie-item":"/cmps/movie-item/movie-item",
+    "nav-bar":"/cmps/nav-bar/nav-bar"
+  }
+}

@@ -1,0 +1,13 @@
+<!--pages/detail/detail.wxml-->
+<nav-bar title="{{ title }}"
+         navBarColor="#42BD55"
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='true'
+         home='true'
+         bind:eventAction="backAction"
+></nav-bar>
+
+<text>pages/detail/detail.wxml</text>

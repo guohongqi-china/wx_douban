@@ -1,0 +1,21 @@
+<!--components/photo-item/photo-item.wxml-->
+<!-- <text>components/photo-item/photo-item.wxml</text> -->
+
+<view class="container-item">
+    <view class="item" bind:tap="tapAction">
+        <image class="photo-item" src="{{ source.images.large || 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2578474613.jpg' }}"> </image>
+        <view class="item-title">{{ source.title || '你好是是是' }}</view>
+        <view class="score">
+            <block wx:if="{{ 3 }}">
+                <view class="stars">
+                    <image wx:for="{{ source.stars.on }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_on.png"></image>
+                    <image wx:for="{{ source.stars.half }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_half.png"></image>
+                    <image wx:for="{{ source.stars.off }}" wx:key = "qunique" class="star" src="/imgs/rating_star_small_off.png"></image>
+                </view>
+                {{ source.rating.average }}
+            </block>
+            <block wx:else>暂无评分</block>
+        </view>
+        
+    </view>
+</view>

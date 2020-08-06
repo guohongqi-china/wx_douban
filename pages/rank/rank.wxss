@@ -1,0 +1,34 @@
+/* pages/rank/rank.wxss */
+page{
+    height:100rpx;
+    width: 100%;
+    background-color: aqua;
+} 
+/* .container{  */
+    /* background-color: chartreuse; */
+/* } */
+.flex-test{
+    width: 400rpx;
+    border: 1 solid red;
+    overflow: scroll;
+    background-color: cornflowerblue;
+}
+
+.flex-test view{
+    width: 200rpx;
+    height: 500rpx;
+    font-size: 32rpx; 
+    color: wheat;
+    text-align: center;
+    line-height: 200rpx;
+}
+
+.a{
+    background-color: tomato;
+}
+.b{
+    background-color: blueviolet;
+}
+.c{
+    background-color: yellow;
+}

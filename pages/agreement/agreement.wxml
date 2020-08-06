@@ -1,0 +1,5 @@
+<!--pages/agreement/agreement.wxml-->
+<!-- <text>pages/agreement/agreement.wxml</text> -->
+<web-view src="https://www.baidu.com" bindmessage="">
+</web-view>
+

@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<nav-bar title="搜索"
+         navBarColor="#42BD55"
+         statusBarColor="#42BD5e"
+         titleColor='#fff'
+         titleSize='32'
+         titleWeight='bold'
+         back='true'
+         home='true'
+         bind:eventAction="backAction"
+></nav-bar>
+<view class="container" style="height:{{contentHeight}}rpx;margin-top:{{topHead}}rpx;">
+  <text>pages/search/search.wxml</text>
+
+</view>
